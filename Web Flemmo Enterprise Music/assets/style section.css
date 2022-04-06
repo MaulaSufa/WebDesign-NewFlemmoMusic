@@ -1,0 +1,106 @@
+*,::after,::before{box-sizing:border-box;}
+section{display:block;}
+h4,h6{margin-top:0;margin-bottom:.5rem;}
+p{margin-top:0;margin-bottom:1rem;}
+h4,h6{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;}
+h4{font-size:1.5rem;}
+h6{font-size:1rem;}
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
+@media (min-width:576px){
+.container{max-width:540px;}
+}
+@media (min-width:768px){
+.container{max-width:720px;}
+}
+@media (min-width:992px){
+.container{max-width:960px;}
+}
+@media (min-width:1200px){
+.container{max-width:1140px;}
+}
+.row{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-right:-15px;
+    margin-left:-15px;
+}
+.col-lg-3,.col-md-12,.col-md-6{
+    position:relative;
+    width:100%;
+    min-height:1px;
+    padding-right:15px;
+    padding-left:15px;
+    margin: 0 auto;
+}
+@media (min-width:768px) {
+    .col-md-6 {
+        -webkit-box-flex:0;
+        -ms-flex:0 0 50%;
+        flex:0 0 50%;
+        max-width:50%; 
+    }
+    .col-md-12 {
+        -webkit-box-flex:0;
+        -ms-flex:0 0 100%;
+        flex:0 0 100%;
+        max-width:100%;
+    }
+}
+@media (min-width:992px) {
+    .col-lg-3 {
+        -webkit-box-flex:0;
+        -ms-flex:0 0 25%;
+        flex:0 0 25%;
+        max-width:25%;
+    }
+}
+@media screen and (max-width: 991px){
+    .mb-md50{margin-bottom:50px;}
+}
+@media screen and (max-width: 767px){
+    .mb-sm50{margin-bottom:50px;}
+    .section-head h4{font-size:40px;}
+}
+
+.services h1 {
+    color: white;
+    transition: all 500ms ease 0ms;
+}
+
+.services h1:hover {
+    color: #c55f5f;
+}
+
+.mb-md50, .mb-sm50, .item {
+    background-color: #0A0A0A;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 50px;
+    transition: all 500ms ease 0ms;
+    min-height: 300px
+}
+
+.col-lg-3 {
+    color: white;
+    transition: all 500ms ease 0ms;
+}
+
+.col-lg-3 h2 {
+    color: white;
+    transition: all 500ms ease 0ms;
+}
+
+.col-lg-3:hover {
+    transform: scale(1.05);
+}
+
+.col-lg-3:hover h2 {
+    color: #c55f5f;
+}
+
+.mb-md50:hover, .mb-sm50:hover, .item:hover {
+    background-color: rgb(73, 62, 62);
+}
